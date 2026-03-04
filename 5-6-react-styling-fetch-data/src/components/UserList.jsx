@@ -4,7 +4,11 @@ import UserCard from "./UserCard";
 
 function UserList({ users, onUserClick }) {
   if (users.length === 0) {
-    return <Alert variant="info">No users found matching your search criteria.</Alert>;
+    return (
+      <Alert variant="info">
+        No users found matching your search criteria.
+      </Alert>
+    );
   }
 
   return (
